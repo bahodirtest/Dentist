@@ -1,0 +1,302 @@
+/* xl */
+@media (min-width: 1200px) {
+  
+}
+
+/* lg */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .header__banner {
+    padding: 150px 0;
+  }
+
+  .header {
+    background-color: blue;
+  }
+
+  .header__top .container {
+    flex-wrap: wrap;
+  }
+
+  .header__logo {
+    margin-bottom: 33px;
+    width: 100%;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header__icons {
+    flex: 1 1 100%;
+  }
+
+  .about__element {
+    flex: 1 1 33.3%;
+  }
+
+  .why__img {
+    display: none;
+  }
+}
+
+/* md */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header {
+    background-color: green;
+  }
+
+  .header__top .container {
+    align-items: center;
+    outline: 1px solid red;
+    padding: 20px 0 29px;
+  }
+
+  .header__logo {
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .header__icons {
+    max-width: 350px;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+
+  .icons__icon {
+    display: none;
+  }
+
+  .icons__title,
+  .icons__subtitle,
+  .icons__subtitle a {
+    font-size: 0;
+  }
+
+  .icons__element:first-child .icons__title,
+  .icons__element:first-child .icons__subtitle {
+    font-size: 15px;
+  }
+
+  .icons__mail::before,
+  .icons__phone::before {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #1a9bdc;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 19px;
+    position: absolute;
+    right: 0;
+    font-family: 'FontAwesome';
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    content: "";
+  }
+
+  .icons__mail::before {
+    content: "\f0e0";
+    font-size: 24px;
+  }
+
+  .icons__phone::before {
+    content: "\f10b";
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .header__menu {
+    display: block;
+    position: fixed;
+    top: -140%;
+    left: 0;
+    padding: 125px 25px 20px 14%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    z-index: -1;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__menu>li {
+    margin-bottom: 15px;
+
+  }
+
+  .header__menu>li a {
+    font-size: 20px;
+  }
+
+  .about__element {
+    padding: 50px 20px 50px;
+    flex: 1 1 50%;
+  }
+
+  .why__left,
+  .why__right {
+    flex: 1 1 50%;
+  }
+
+  .why__left>.why__elemnt:first-child,
+  .why__right>.why__elemnt:first-child {
+    margin-bottom: 50px;
+  }
+
+  .results {
+    padding: 100px 0;
+  }
+
+  .results__row {
+    padding: 0 20px;
+  }
+
+  .results__img {
+    margin-bottom: 30px;
+    height: 70px;
+  }
+
+  .results__number {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .results__number::after {
+    width: 60px;
+  }
+
+  .results__text {
+    font-size: 20px;
+  }
+
+  .results__text span {
+    width: 100%;
+    display: block;
+  }
+
+}
+
+/* sm */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .header {
+    background-color: yellow;
+  }
+
+  .header__icons {
+    max-width: 150px;
+  }
+
+  .icons__element:first-child .icons__title,
+  .icons__element:first-child .icons__subtitle {
+    font-size: 0;
+  }
+
+  .header__nav .container {
+    padding: 20px 0 20px;
+  }
+
+  .banner__content {
+    padding-left: 0;
+  }
+
+  .why__elemnt {
+    margin-bottom: 25px;
+  }
+
+  .results__element {
+    flex: 1 1 50%;
+    margin-bottom: 30px;
+  }
+
+  .results {
+    padding-bottom: 70px;
+  }
+}
+
+/* xs */
+@media (max-width: 575.98px) {
+  .container {
+    max-width: auto;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .header {
+    background-color: aqua;
+  }
+
+  .banner__title {
+    font-size: 35px;
+  }
+
+  .header__logo img {
+    max-width: 150px;
+  }
+
+
+  .header__icons {
+    max-width: 130px;
+  }
+
+  .icons__mail::before,
+  .icons__phone::before {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .icons__phone::before {
+    font-size: 25px;
+  }
+
+  .hamburger-box {
+    width: 30px;
+    height: 20px;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 30px;
+    height: 3px;
+  }
+
+  .about__element {
+    padding: 25px 10px 25px;
+    flex: 1 1 100%;
+  }
+
+  .results__element {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+}
